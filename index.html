@@ -3,27 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
-    <title>Catch - Find &amp; squish those pesky bugs</title>
+    <title>Catch - Javascript Monitoring &amp; Debugging</title>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Pacifico|Roboto' type='text/css'>
     <link rel='author' href='http://toolmantim.com/'>
     <link rel='canonical' href='http://catch.io/'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      * { margin: 0; padding: 0; text-align: center; }
+      * { margin: 0; padding: 0; text-align: center; font-weight: normal; }
       html, body, article { width: 100%; height: 100%; -ie-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-      html { display: table; text-rendering: optimizeLegibility; }
+      html { display: table; background-color: #ffffe0; text-rendering: optimizeLegibility; color: #880; font: normal 14px/1.5 roboto, sans-serif; }
+      a:hover, a:active { border-bottom-color: #880 ;}
       body { display: table-row; }
       article { display: table-cell; vertical-align: middle; padding-bottom: 4%; }
-
-      html { background-color: #ffffe0; text-rendering: optimizeLegibility; }
       h1 { font: normal 105px/1 pacifico, sans-serif; color: #330; margin-bottom: .25em; text-indent: -.2em; }
-      h2 { font: normal 10px/1 roboto, sans-serif; color: #880; text-transform: uppercase; letter-spacing: 0.2em; }
+      h2 { font-size: 10px; line-height: 1; text-transform: uppercase; letter-spacing: 2px; }
+      p  { font-size: 12px; margin-top: 5em; }
+      p a { background-color: #aa7; display: inline-block; color: #ffc; text-decoration: none; text-transform: uppercase; line-height: 1; padding: 5px 7px 6px 7px; border-radius: 3px; font-size: 11px; }
+      p a:hover { background-color: #bb8; }
     </style>
   </head>
   <body>
     <article>
       <h1>Catch</h1>
       <h2>Javascript Monitoring &amp; Debugging</h2>
+      <p><a href="mailto:support@THISDOMAIN.io">Contact Support</a></p>
     </article>
+    <script>
+      (function(links) {
+        for (var i = 0; i < links.length; i++)
+          links[i].href = links[i].href.replace("THISDOMAIN.io", window.location.host);
+      })(document.getElementsByTagName("a"));
+    </script>
   </body>
 </html>
